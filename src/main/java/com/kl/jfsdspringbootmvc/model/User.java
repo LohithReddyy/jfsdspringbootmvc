@@ -10,16 +10,19 @@ import jakarta.persistence.Table;
 public class User {
 
     @Id
-
-    @Column(name = "username", nullable = false,unique=true)
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
-    @Column(name = "email", nullable = false,unique=true)
+
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
-    @Column(name = "password", nullable = false,unique=true)
+
+    @Column(name = "password", nullable = false)
     private String password;
-    @Column(name = "phoneNumber", nullable = false,unique=true)
+
+    @Column(name = "phoneNumber", nullable = false, unique = true)
     private String phoneNumber;
 
+    // Getter and Setter for username
     public String getUsername() {
         return username;
     }
@@ -28,6 +31,7 @@ public class User {
         this.username = username;
     }
 
+    // Getter and Setter for email
     public String getEmail() {
         return email;
     }
@@ -36,6 +40,7 @@ public class User {
         this.email = email;
     }
 
+    // Getter and Setter for password
     public String getPassword() {
         return password;
     }
@@ -44,6 +49,7 @@ public class User {
         this.password = password;
     }
 
+    // Getter and Setter for phoneNumber
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -51,9 +57,4 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
-
-
-    
-
 }
